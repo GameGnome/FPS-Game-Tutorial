@@ -44,7 +44,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 
 	void Start()
 	{
-		if(PV.IsMine)
+		Cursor.lockState = CursorLockMode.Locked;
+		if (PV.IsMine)
 		{
 			EquipItem(0);
 		}
